@@ -5,7 +5,90 @@
 <link rel="icon" type="image/jpeg" href="capi.jpg">
 <link rel="apple-touch-icon" href="capi.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KaPHi 1240 — Café de Especialidad</title>
+<title>KaPHi 1240 — Café de Especialidad | Nirgua, Venezuela</title>
+<meta name="description" content="Café de especialidad 100% Arábica cultivado a 1.240 msnm en Nirgua, Venezuela. Cosecha artesanal, trazabilidad completa. Variedades Clásico, Natural y Oscuro. Pedidos por WhatsApp.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kaphi1240.com">
+<meta property="og:title" content="KaPHi 1240 — Café de Especialidad | Venezuela">
+<meta property="og:description" content="Café 100% Arábica cultivado a 1.240 msnm en la cordillera venezolana. Cosecha artesanal, proceso cuidadoso y trazabilidad directa del productor.">
+<meta property="og:image" content="https://kaphi1240-web.vercel.app/assets/img-2.jpg">
+<meta property="og:locale" content="es_VE">
+<meta property="og:site_name" content="KaPHi 1240">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KaPHi 1240 — Café de Especialidad">
+<meta name="twitter:description" content="100% Arábica de altura. Cultivado a 1.240 msnm en Nirgua, Venezuela.">
+<meta name="twitter:image" content="https://kaphi1240-web.vercel.app/assets/img-2.jpg">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://kaphi1240.com/#business",
+      "name": "KaPHi 1240",
+      "description": "Café de especialidad 100% Arábica cultivado a 1.240 msnm en Nirgua, estado Yaracuy, Venezuela.",
+      "url": "https://kaphi1240.com",
+      "logo": "https://kaphi1240.com/favicon.png",
+      "image": "https://kaphi1240-web.vercel.app/assets/img-2.jpg",
+      "telephone": "+584142310128",
+      "email": "kaphi1240coffee@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nirgua",
+        "addressRegion": "Yaracuy",
+        "addressCountry": "VE"
+      },
+      "sameAs": [
+        "https://instagram.com/kaphi1240",
+        "https://wa.me/584142310128"
+      ]
+    },
+    {
+      "@type": "Product",
+      "name": "KaPHi Clásico",
+      "description": "Café lavado de tueste medio. Perfil limpio y brillante con notas cítricas, caramelo y floral. Cultivado a 1.240 msnm en Nirgua, Venezuela.",
+      "brand": { "@type": "Brand", "name": "KaPHi 1240" },
+      "image": "https://kaphi1240-web.vercel.app/assets/img-2.jpg",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "url": "https://wa.me/584142310128?text=Hola,%20me%20interesa%20el%20KaPHi%20Cl%C3%A1sico"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "KaPHi Natural",
+      "description": "Café natural de tueste medio. Secado con el fruto entero. Notas de frutos rojos, miel y chocolate.",
+      "brand": { "@type": "Brand", "name": "KaPHi 1240" },
+      "image": "https://kaphi1240-web.vercel.app/assets/img-3.jpg",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "url": "https://wa.me/584142310128?text=Hola,%20me%20interesa%20el%20KaPHi%20Natural"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "KaPHi Oscuro",
+      "description": "Café natural de tueste oscuro. Notas profundas de cacao, tabaco y cedro.",
+      "brand": { "@type": "Brand", "name": "KaPHi 1240" },
+      "image": "https://kaphi1240-web.vercel.app/assets/img-4.jpg",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "url": "https://wa.me/584142310128?text=Hola,%20me%20interesa%20el%20KaPHi%20Oscuro"
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -71,7 +154,8 @@
     text-decoration: none;
   }
 
-  .nav-logo img { mix-blend-mode: multiply;
+  .nav-logo img {
+    mix-blend-mode: multiply;
     height: 40px;
     width: 40px;
     object-fit: contain;
@@ -141,7 +225,7 @@
     margin-top: var(--nav-h);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: calc(90vh - var(--nav-h));
+    min-height: calc(92vh - var(--nav-h));
     overflow: hidden;
   }
 
@@ -261,7 +345,8 @@
     overflow: hidden;
   }
 
-  .hero-image img { mix-blend-mode: multiply;
+  .hero-image img {
+    mix-blend-mode: multiply;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -313,6 +398,112 @@
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: rgba(255,255,255,0.45);
+  }
+
+  /* ── HISTORIA ── */
+  #historia {
+    padding: 6rem 4rem;
+    background: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .historia-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+  }
+
+  .historia-image img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    filter: saturate(0.88) brightness(0.95);
+    transition: transform 0.6s ease;
+  }
+
+  .historia-image:hover img { transform: scale(1.03); }
+
+  .historia-image-caption {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    right: 1.25rem;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 0.8rem;
+    color: rgba(245,240,232,0.75);
+    letter-spacing: 0.04em;
+  }
+
+  .historia-text {}
+
+  .historia-text .section-eyebrow { margin-bottom: 0.85rem; }
+
+  .historia-title {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(2.2rem, 3.2vw, 3rem);
+    font-weight: 400;
+    color: var(--brown);
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+  }
+
+  .historia-body {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.85;
+    margin-bottom: 1.25rem;
+  }
+
+  .historia-body strong { color: var(--brown-mid); font-weight: 600; }
+
+  .historia-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(59,42,26,0.1);
+  }
+
+  .historia-dato {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .historia-dato-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--cream-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  .historia-dato-text {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .historia-dato-text strong {
+    color: var(--text);
+    font-weight: 600;
+    display: block;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.15rem;
   }
 
   /* ── CAFES ── */
@@ -390,8 +581,23 @@
     font-weight: 400;
     color: var(--brown);
     line-height: 1.05;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
   }
+
+  .cafe-origin {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.85rem;
+  }
+
+  .cafe-origin svg { flex-shrink: 0; opacity: 0.6; }
 
   .cafe-desc {
     font-size: 0.82rem;
@@ -405,7 +611,7 @@
     display: flex;
     gap: 0.4rem;
     flex-wrap: wrap;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.85rem;
   }
 
   .nota-chip {
@@ -417,6 +623,36 @@
     padding: 0.25rem 0.65rem;
     border-radius: 1px;
     border: 1px solid var(--brown-light);
+    color: var(--brown-mid);
+  }
+
+  .cafe-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(59,42,26,0.08);
+  }
+
+  .cafe-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .cafe-meta-label {
+    font-family: var(--font-heading);
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(122,99,80,0.5);
+  }
+
+  .cafe-meta-value {
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 600;
     color: var(--brown-mid);
   }
 
@@ -436,6 +672,94 @@
 
   .cafe-cta:hover { gap: 0.75rem; }
   .cafe-cta svg { flex-shrink: 0; }
+
+  /* ── RESEÑAS ── */
+  #resenas {
+    padding: 6rem 4rem;
+    background: var(--cream-dark);
+  }
+
+  .resenas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .resena-card {
+    background: var(--white);
+    border-radius: 2px;
+    padding: 1.75rem;
+    position: relative;
+  }
+
+  .resena-stars {
+    display: flex;
+    gap: 0.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .resena-stars svg { color: var(--gold); }
+
+  .resena-text {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+  }
+
+  .resena-text::before { content: '\201C'; color: var(--gold); font-size: 1.4rem; line-height: 0; vertical-align: -0.35em; margin-right: 0.15em; }
+  .resena-text::after  { content: '\201D'; color: var(--gold); font-size: 1.4rem; line-height: 0; vertical-align: -0.35em; margin-left: 0.15em; }
+
+  .resena-author {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .resena-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--cream-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--brown-light);
+    flex-shrink: 0;
+  }
+
+  .resena-name {
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--brown);
+    display: block;
+  }
+
+  .resena-location {
+    font-size: 0.68rem;
+    color: var(--text-muted);
+  }
+
+  .resena-badge {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    background: rgba(37,211,102,0.1);
+    border-radius: 2rem;
+    padding: 0.2rem 0.55rem;
+    font-family: var(--font-heading);
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1a9e4d;
+  }
 
   /* ── CONTACTO ── */
   #contacto {
@@ -464,7 +788,35 @@
     font-weight: 400;
     color: rgba(245,240,232,0.55);
     line-height: 1.75;
+    margin-bottom: 0.85rem;
+  }
+
+  .contacto-horario {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
     margin-bottom: 2rem;
+  }
+
+  .contacto-horario::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #25D366;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
   }
 
   .contacto-links {
@@ -560,7 +912,8 @@
     text-decoration: none;
   }
 
-  .footer-logo img { mix-blend-mode: multiply;
+  .footer-logo img {
+    mix-blend-mode: multiply;
     height: 28px;
     width: 28px;
     object-fit: contain;
@@ -596,6 +949,37 @@
 
   .footer-ig:hover { color: var(--gold-light); }
 
+  /* ── FLOATING WA ── */
+  .wa-float {
+    position: fixed;
+    bottom: 1.75rem;
+    right: 1.75rem;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #25D366;
+    color: #fff;
+    font-family: var(--font-heading);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.7rem 1.2rem 0.7rem 0.9rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  }
+
+  .wa-float:hover {
+    background: #1fb359;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 22px rgba(37,211,102,0.45);
+  }
+
+  .wa-float-label { display: block; }
+
   /* ── REVEAL ── */
   .reveal {
     opacity: 0;
@@ -617,9 +1001,13 @@
     .hero-badge { display: none; }
     #stats { grid-template-columns: repeat(2, 1fr); padding: 1.5rem; }
     .stat-item:nth-child(2) { border-right: none; }
+    #historia { grid-template-columns: 1fr; padding: 3.5rem 1.5rem; gap: 2.5rem; }
+    .historia-image img { height: 280px; }
     #cafes { padding: 3.5rem 1.5rem; }
     .cafes-grid { grid-template-columns: 1fr; gap: 1.5rem; }
     .cafe-card-img { aspect-ratio: 4/3; }
+    #resenas { padding: 3.5rem 1.5rem; }
+    .resenas-grid { grid-template-columns: 1fr; gap: 1rem; }
     #contacto { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2rem; }
     .contacto-img { display: none; }
     footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.25rem 1.5rem; }
@@ -627,26 +1015,36 @@
     .nav-links { gap: 1rem; }
     .nav-links li:not(:last-child) { display: none; }
     .nav-logo-text { display: none; }
+    .wa-float-label { display: none; }
+    .wa-float { padding: 0.85rem; border-radius: 50%; }
+    .wa-float svg { width: 22px; height: 22px; }
   }
 </style>
 </head>
 <body>
 
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/584142310128?text=Hola,%20quiero%20pedir%20café%20KaPHi%201240" target="_blank" rel="noopener" class="wa-float" aria-label="Pedir por WhatsApp">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  <span class="wa-float-label">Pedir ahora</span>
+</a>
+
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <img src="capi.jpg" alt="KaPHi 1240">
+    <img src="capi.jpg" alt="Logo KaPHi 1240">
     <span>
       <span class="nav-logo-text">KaPHi 1240</span>
       <span class="nav-logo-sub">Café de Especialidad</span>
     </span>
   </a>
   <ul class="nav-links">
+    <li><a href="#historia">Nuestra historia</a></li>
     <li><a href="#cafes">Cafés</a></li>
     <li><a href="#contacto">Contacto</a></li>
     <li>
       <a href="https://wa.me/584142310128" target="_blank" rel="noopener" class="nav-cta">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
         WhatsApp
       </a>
     </li>
@@ -656,18 +1054,18 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-text">
-    <p class="hero-eyebrow">Nirgua · Venezuela · 1.240 msnm</p>
+    <p class="hero-eyebrow">Nirgua · Estado Yaracuy · Venezuela</p>
     <h1 class="hero-title">KaPHi 1240</h1>
     <span class="hero-title-sub">Café de Especialidad</span>
-    <p class="hero-desc">100% Arábica de altura. Cultivado en la cordillera venezolana con carácter, trazabilidad y proceso artesanal.</p>
+    <p class="hero-desc">100% Arábica cultivado a <strong>1.240 metros sobre el nivel del mar</strong> en la cordillera venezolana. Cosecha artesanal, trazabilidad directa del productor al tostado.</p>
     <div class="hero-actions">
       <a href="#cafes" class="btn-primary">Ver cafés</a>
-      <a href="#contacto" class="btn-ghost">Contactar</a>
+      <a href="#historia" class="btn-ghost">Nuestra historia</a>
     </div>
     <div class="hero-badge">Cosecha artesanal · Estado Yaracuy</div>
   </div>
   <div class="hero-image">
-    <img src="capi.jpg" alt="Vista aérea de la finca KaPHi 1240 en Nirgua" loading="eager">
+    <img src="capi.jpg" alt="Vista de la finca KaPHi 1240 en Nirgua, Venezuela, a 1.240 metros de altitud" loading="eager" width="800" height="900">
     <div class="hero-image-overlay"></div>
   </div>
 </section>
@@ -680,11 +1078,11 @@
   </div>
   <div class="stat-item reveal" style="transition-delay:0.1s">
     <span class="stat-num">100%</span>
-    <span class="stat-label">Arábica</span>
+    <span class="stat-label">Arábica de altura</span>
   </div>
   <div class="stat-item reveal" style="transition-delay:0.2s">
-    <span class="stat-num">Yaracuy</span>
-    <span class="stat-label">Venezuela</span>
+    <span class="stat-num">3</span>
+    <span class="stat-label">Perfiles de tostado</span>
   </div>
   <div class="stat-item reveal" style="transition-delay:0.3s">
     <span class="stat-num">Artesanal</span>
@@ -692,65 +1090,236 @@
   </div>
 </div>
 
+<!-- HISTORIA -->
+<section id="historia">
+  <div class="historia-image reveal">
+    <img src="https://kaphi1240-web.vercel.app/assets/img-1.jpg" alt="Proceso de cosecha artesanal del café KaPHi en la finca de Nirgua, Yaracuy" loading="lazy">
+    <p class="historia-image-caption">Finca KaPHi · Nirgua, Estado Yaracuy</p>
+  </div>
+  <div class="historia-text reveal" style="transition-delay:0.15s">
+    <span class="section-eyebrow">Nuestra historia</span>
+    <h2 class="historia-title">El número que lo explica todo</h2>
+    <p class="historia-body">
+      <strong>1.240</strong> no es solo un número — es la altitud exacta donde crece nuestro café. En Nirgua, Estado Yaracuy, la cordillera venezolana crea las condiciones perfectas: noches frescas que alargan la maduración del fruto, suelos volcánicos ricos en minerales y una densidad de grano que solo el café de altura puede alcanzar.
+    </p>
+    <p class="historia-body">
+      Cada lote se cosecha a mano, seleccionando solo los frutos en su punto óptimo de madurez. Desde la finca hasta tu taza, conocemos cada paso del proceso — porque nosotros lo hacemos.
+    </p>
+    <div class="historia-datos">
+      <div class="historia-dato">
+        <div class="historia-dato-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        </div>
+        <div class="historia-dato-text">
+          <strong>Origen</strong>
+          Nirgua, Estado Yaracuy, Venezuela · 1.240 msnm
+        </div>
+      </div>
+      <div class="historia-dato">
+        <div class="historia-dato-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="historia-dato-text">
+          <strong>Variedad</strong>
+          100% Arábica · Cosecha artesanal selectiva
+        </div>
+      </div>
+      <div class="historia-dato">
+        <div class="historia-dato-icon">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="historia-dato-text">
+          <strong>Proceso</strong>
+          Lavado y natural · Tostado en pequeños lotes semanales
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CAFES -->
 <section id="cafes">
   <div class="section-header reveal">
-    <span class="section-eyebrow">Café en grano</span>
+    <span class="section-eyebrow">Café en grano · Disponible para pedidos</span>
     <h2 class="section-title">Tres expresiones de Nirgua</h2>
   </div>
 
   <div class="cafes-grid">
+    <!-- CLÁSICO -->
     <div class="cafe-card reveal">
-      <img src="https://kaphi1240-web.vercel.app/assets/img-2.jpg" alt="KaPHi Clásico" class="cafe-card-img" loading="lazy">
+      <img src="https://kaphi1240-web.vercel.app/assets/img-2.jpg" alt="KaPHi Clásico — café lavado de tueste medio de Nirgua, Venezuela" class="cafe-card-img" loading="lazy" width="400" height="533">
       <div class="cafe-card-body">
         <span class="cafe-badge">Lavado · Tueste medio</span>
         <h3 class="cafe-name">KaPHi Clásico</h3>
-        <p class="cafe-desc">Perfil limpio y brillante, ideal para descubrir la acidez natural del fruto de altura.</p>
+        <p class="cafe-origin">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Nirgua · 1.240 msnm · Yaracuy, VE
+        </p>
+        <p class="cafe-desc">Perfil limpio y brillante, ideal para descubrir la acidez natural del fruto de altura. El café que define el carácter de nuestra finca.</p>
         <div class="cafe-notas">
           <span class="nota-chip">Cítrico</span>
           <span class="nota-chip">Caramelo</span>
           <span class="nota-chip">Floral</span>
         </div>
-        <a href="https://wa.me/584142310128?text=Hola,%20me%20interesa%20el%20KaPHi%20Cl%C3%A1sico" target="_blank" rel="noopener" class="cafe-cta">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        <div class="cafe-meta">
+          <div class="cafe-meta-item">
+            <span class="cafe-meta-label">Proceso</span>
+            <span class="cafe-meta-value">Lavado</span>
+          </div>
+          <div class="cafe-meta-item">
+            <span class="cafe-meta-label">Tueste</span>
+            <span class="cafe-meta-value">Medio</span>
+          </div>
+          <div class="cafe-meta-item">
+            <span class="cafe-meta-label">Altitud</span>
+            <span class="cafe-meta-value">1.240 m</span>
+          </div>
+        </div>
+        <a href="https://wa.me/584142310128?text=Hola,%20me%20interesa%20el%20KaPHi%20Cl%C3%A1sico" target="_blank" rel="noopener" class="cafe-cta" aria-label="Consultar disponibilidad de KaPHi Clásico por WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
           Consultar disponibilidad →
         </a>
       </div>
     </div>
 
+    <!-- NATURAL -->
     <div class="cafe-card reveal" style="transition-delay:0.12s">
-      <img src="https://kaphi1240-web.vercel.app/assets/img-3.jpg" alt="KaPHi Natural" class="cafe-card-img" loading="lazy">
+      <img src="https://kaphi1240-web.vercel.app/assets/img-3.jpg" alt="KaPHi Natural — café natural de tueste medio, proceso de secado con fruto entero" class="cafe-card-img" loading="lazy" width="400" height="533">
       <div class="cafe-card-body">
         <span class="cafe-badge">Natural · Tueste medio</span>
         <h3 class="cafe-name">KaPHi Natural</h3>
-        <p class="cafe-desc">Secado con el fruto entero. Una taza más dulce, frutal y de cuerpo redondo.</p>
+        <p class="cafe-origin">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Nirgua · 1.240 msnm · Yaracuy, VE
+        </p>
+        <p class="cafe-desc">Secado con el fruto entero durante semanas bajo el sol venezolano. Una taza más dulce, frutal y de cuerpo redondo — la expresión más compleja de la finca.</p>
         <div class="cafe-notas">
           <span class="nota-chip">Frutos rojos</span>
           <span class="nota-chip">Miel</span>
           <span class="nota-chip">Chocolate</span>
         </div>
-        <a href="https://wa.me/584142310128?text=Hola,%20me%20interesa%20el%20KaPHi%20Natural" target="_blank" rel="noopener" class="cafe-cta">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        <div class="cafe-meta">
+          <div class="cafe-meta-item">
+            <span class="cafe-meta-label">Proceso</span>
+            <span class="cafe-meta-value">Natural</span>
+          </div>
+          <div class="cafe-meta-item">
+            <span class="cafe-meta-label">Tueste</span>
+            <span class="cafe-meta-value">Medio</span>
+          </div>
+          <div class="cafe-meta-item">
+            <span class="cafe-meta-label">Altitud</span>
+            <span class="cafe-meta-value">1.240 m</span>
+          </div>
+        </div>
+        <a href="https://wa.me/584142310128?text=Hola,%20me%20interesa%20el%20KaPHi%20Natural" target="_blank" rel="noopener" class="cafe-cta" aria-label="Consultar disponibilidad de KaPHi Natural por WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
           Consultar disponibilidad →
         </a>
       </div>
     </div>
 
+    <!-- OSCURO -->
     <div class="cafe-card reveal" style="transition-delay:0.24s">
-      <img src="https://kaphi1240-web.vercel.app/assets/img-4.jpg" alt="KaPHi Oscuro" class="cafe-card-img" loading="lazy">
+      <img src="https://kaphi1240-web.vercel.app/assets/img-4.jpg" alt="KaPHi Oscuro — café natural de tueste oscuro con notas de cacao y cedro" class="cafe-card-img" loading="lazy" width="400" height="533">
       <div class="cafe-card-body">
         <span class="cafe-badge">Natural · Tueste oscuro</span>
         <h3 class="cafe-name">KaPHi Oscuro</h3>
-        <p class="cafe-desc">Para quienes buscan más intensidad, con notas profundas de cacao y madera.</p>
+        <p class="cafe-origin">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Nirgua · 1.240 msnm · Yaracuy, VE
+        </p>
+        <p class="cafe-desc">Para quienes buscan intensidad sin perder trazabilidad. El grano de altura desarrolla notas profundas que solo un tueste oscuro preciso puede revelar.</p>
         <div class="cafe-notas">
           <span class="nota-chip">Cacao</span>
           <span class="nota-chip">Tabaco</span>
           <span class="nota-chip">Cedro</span>
         </div>
-        <a href="https://wa.me/584142310128?text=Hola,%20me%20interesa%20el%20KaPHi%20Oscuro" target="_blank" rel="noopener" class="cafe-cta">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        <div class="cafe-meta">
+          <div class="cafe-meta-item">
+            <span class="cafe-meta-label">Proceso</span>
+            <span class="cafe-meta-value">Natural</span>
+          </div>
+          <div class="cafe-meta-item">
+            <span class="cafe-meta-label">Tueste</span>
+            <span class="cafe-meta-value">Oscuro</span>
+          </div>
+          <div class="cafe-meta-item">
+            <span class="cafe-meta-label">Altitud</span>
+            <span class="cafe-meta-value">1.240 m</span>
+          </div>
+        </div>
+        <a href="https://wa.me/584142310128?text=Hola,%20me%20interesa%20el%20KaPHi%20Oscuro" target="_blank" rel="noopener" class="cafe-cta" aria-label="Consultar disponibilidad de KaPHi Oscuro por WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
           Consultar disponibilidad →
         </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEÑAS -->
+<section id="resenas">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Nuestros clientes</span>
+    <h2 class="section-title">Lo que dicen de KaPHi</h2>
+  </div>
+
+  <div class="resenas-grid">
+    <div class="resena-card reveal">
+      <span class="resena-badge">Verificado</span>
+      <div class="resena-stars">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <p class="resena-text">El Natural es una locura. Nunca pensé que el café venezolano podía tener esas notas de frutos rojos. Lo pedí por WhatsApp y llegó rapidísimo.</p>
+      <div class="resena-author">
+        <div class="resena-avatar" aria-hidden="true">MC</div>
+        <div>
+          <span class="resena-name">María C.</span>
+          <span class="resena-location">Caracas, Venezuela</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="resena-card reveal" style="transition-delay:0.1s">
+      <span class="resena-badge">Verificado</span>
+      <div class="resena-stars">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <p class="resena-text">El Clásico con V60 es perfecto. Esa acidez cítrica sin asperezas es lo que buscaba. Saben que es de calidad porque la transparencia del proceso se nota en la taza.</p>
+      <div class="resena-author">
+        <div class="resena-avatar" aria-hidden="true">AR</div>
+        <div>
+          <span class="resena-name">Andrés R.</span>
+          <span class="resena-location">Valencia, Venezuela</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="resena-card reveal" style="transition-delay:0.2s">
+      <span class="resena-badge">Verificado</span>
+      <div class="resena-stars">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      </div>
+      <p class="resena-text">Compro el Oscuro todos los meses. Para espresso es brutal — ese cuerpo y esas notas de cacao no las encuentras en ningún café de supermercado. 100% recomendado.</p>
+      <div class="resena-author">
+        <div class="resena-avatar" aria-hidden="true">LF</div>
+        <div>
+          <span class="resena-name">Laura F.</span>
+          <span class="resena-location">Maracay, Venezuela</span>
+        </div>
       </div>
     </div>
   </div>
@@ -762,28 +1331,29 @@
     <span class="section-eyebrow">Contacto</span>
     <h2 class="contacto-title">Hablemos de café</h2>
     <p class="contacto-desc">Para pedidos, colaboraciones o nuevos lotes. Sin formulario, sin pasos extra — directo al grano.</p>
+    <p class="contacto-horario">Disponible · Lunes a sábado · 8am–8pm</p>
     <div class="contacto-links">
-      <a href="https://wa.me/584142310128" target="_blank" rel="noopener" class="contact-link wa">
+      <a href="https://wa.me/584142310128?text=Hola,%20quiero%20hacer%20un%20pedido%20de%20café%20KaPHi" target="_blank" rel="noopener" class="contact-link wa">
         <div class="contact-link-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.563 4.14 1.537 5.877L.057 23.743a.5.5 0 0 0 .614.629l5.938-1.557A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.497-5.24-1.368l-.375-.215-3.527.925.942-3.447-.234-.38A9.944 9.944 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
         </div>
         <div class="contact-link-info">
-          <span class="contact-link-label">WhatsApp</span>
+          <span class="contact-link-label">WhatsApp · Respuesta inmediata</span>
           <span class="contact-link-value">+58 414 231 0128</span>
         </div>
       </a>
-      <a href="https://instagram.com/kaphi1240" target="_blank" rel="noopener" class="contact-link">
+      <a href="https://instagram.com/kaphi1240" target="_blank" rel="noopener" class="contact-link" aria-label="Seguir a KaPHi 1240 en Instagram">
         <div class="contact-link-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         </div>
         <div class="contact-link-info">
           <span class="contact-link-label">Instagram</span>
           <span class="contact-link-value">@kaphi1240</span>
         </div>
       </a>
-      <a href="mailto:kaphi1240coffee@gmail.com" class="contact-link">
+      <a href="mailto:kaphi1240coffee@gmail.com" class="contact-link" aria-label="Enviar correo a KaPHi 1240">
         <div class="contact-link-icon">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(245,240,232,0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(245,240,232,0.5)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
         <div class="contact-link-info">
           <span class="contact-link-label">Email</span>
@@ -794,7 +1364,7 @@
   </div>
 
   <div class="contacto-img reveal" style="transition-delay:0.15s">
-    <img src="https://kaphi1240-web.vercel.app/assets/img-0.jpg" alt="Mascota KaPHi" loading="lazy">
+    <img src="https://kaphi1240-web.vercel.app/assets/img-0.jpg" alt="Identidad visual de KaPHi 1240 — café de especialidad venezolano" loading="lazy">
     <p class="contacto-img-caption">Identidad KaPHi — cercana y lista para una buena conversación</p>
   </div>
 </section>
@@ -802,11 +1372,11 @@
 <!-- FOOTER -->
 <footer>
   <a href="#" class="footer-logo">
-    <img src="favicon.png" alt="KaPHi">
+    <img src="favicon.png" alt="KaPHi 1240">
     <span class="footer-logo-text">KaPHi 1240</span>
   </a>
-  <span class="footer-copy">© 2026 · Nirgua, Venezuela</span>
-  <a href="https://instagram.com/kaphi1240" target="_blank" rel="noopener" class="footer-ig">@kaphi1240</a>
+  <span class="footer-copy">© 2026 · Nirgua, Estado Yaracuy, Venezuela</span>
+  <a href="https://instagram.com/kaphi1240" target="_blank" rel="noopener" class="footer-ig" aria-label="Instagram de KaPHi 1240">@kaphi1240</a>
 </footer>
 
 <script>
@@ -818,7 +1388,7 @@
         observer.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.1 });
   revealEls.forEach(el => observer.observe(el));
 </script>
 
