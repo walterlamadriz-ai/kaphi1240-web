@@ -980,6 +980,126 @@
 
   .wa-float-label { display: block; }
 
+  /* ── SCROLL INTRO ── */
+  #scroll-intro {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--cream);
+  }
+
+  #intro-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  #intro-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px) brightness(0.35) saturate(0.7);
+    transform: scale(1.08);
+  }
+
+  #intro-media {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: 2;
+    will-change: width, height, border-radius;
+    box-shadow: 0 8px 60px rgba(0,0,0,0.5);
+  }
+
+  #intro-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  #intro-media-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 3;
+    transition: opacity 0.05s linear;
+  }
+
+  #intro-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    z-index: 4;
+    pointer-events: none;
+  }
+
+  .intro-word {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: clamp(4rem, 10vw, 9rem);
+    font-weight: 400;
+    color: var(--cream);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 30px rgba(0,0,0,0.5);
+    will-change: transform;
+    white-space: nowrap;
+  }
+
+  #intro-hint {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-heading);
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.65);
+    white-space: nowrap;
+    transition: opacity 0.2s;
+  }
+
+  .intro-arrow {
+    animation: introArrow 1.4s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .intro-arrow svg { opacity: 0.6; }
+
+  @keyframes introArrow {
+    0%, 100% { transform: translateY(0); opacity: 0.7; }
+    50% { transform: translateY(5px); opacity: 0.3; }
+  }
+
+  #scroll-intro.dismissed {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.55s ease;
+  }
+
   /* ── REVEAL ── */
   .reveal {
     opacity: 0;
@@ -1022,6 +1142,29 @@
 </style>
 </head>
 <body>
+
+<!-- SCROLL EXPANSION INTRO -->
+<div id="scroll-intro" role="presentation" aria-hidden="true">
+  <div id="intro-bg">
+    <img src="https://kaphi1240-web.vercel.app/assets/img-1.jpg" alt="" draggable="false">
+  </div>
+  <div id="intro-media">
+    <img src="https://kaphi1240-web.vercel.app/assets/img-1.jpg" alt="Finca KaPHi 1240 · Nirgua, Yaracuy" draggable="false">
+    <div id="intro-media-overlay"></div>
+  </div>
+  <div id="intro-text">
+    <span class="intro-word" id="word-left">KaPHi</span>
+    <span class="intro-word" id="word-right">1240</span>
+  </div>
+  <div id="intro-hint">
+    <span>Desliza para descubrir</span>
+    <div class="intro-arrow">
+      <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 2V16M7 16L2 11M7 16L12 11" stroke="rgba(245,240,232,0.6)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</div>
 
 <!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/584142310128?text=Hola,%20quiero%20pedir%20café%20KaPHi%201240" target="_blank" rel="noopener" class="wa-float" aria-label="Pedir por WhatsApp">
@@ -1380,16 +1523,113 @@
 </footer>
 
 <script>
-  const revealEls = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  revealEls.forEach(el => observer.observe(el));
+(function () {
+  var intro       = document.getElementById('scroll-intro');
+  var introMedia  = document.getElementById('intro-media');
+  var mediaOverlay= document.getElementById('intro-media-overlay');
+  var wordLeft    = document.getElementById('word-left');
+  var wordRight   = document.getElementById('word-right');
+  var introBg     = document.getElementById('intro-bg');
+  var introHint   = document.getElementById('intro-hint');
+
+  var progress = 0;
+  var dismissed = false;
+  var touchY = 0;
+  var raf = null;
+  var targetProgress = 0;
+
+  function isMobile() { return window.innerWidth < 768; }
+
+  function applyProgress(p) {
+    var vw = window.innerWidth;
+    var vh = window.innerHeight;
+    var baseW = isMobile() ? 200 : 300;
+    var baseH = isMobile() ? 280 : 400;
+
+    var w = baseW + p * (vw - baseW);
+    var h = baseH + p * (vh - baseH);
+    var radius = Math.max(0, 14 * (1 - p));
+    var bgOp   = Math.max(0, 1 - p * 2);
+    var overOp = Math.max(0, 0.3 - p * 0.3);
+    var shift  = p * (isMobile() ? 26 : 20);
+    var hintOp = Math.max(0, 1 - p * 5);
+
+    introMedia.style.width        = w + 'px';
+    introMedia.style.height       = h + 'px';
+    introMedia.style.borderRadius = radius + 'px';
+    introBg.style.opacity         = bgOp;
+    mediaOverlay.style.opacity    = overOp;
+    wordLeft.style.transform      = 'translateX(-' + shift + 'vw)';
+    wordRight.style.transform     = 'translateX(' + shift + 'vw)';
+    introHint.style.opacity       = hintOp;
+  }
+
+  function tick() {
+    raf = null;
+    if (dismissed) return;
+    progress += (targetProgress - progress) * 0.12;
+    applyProgress(progress);
+    if (progress < 0.995) {
+      raf = requestAnimationFrame(tick);
+    } else {
+      dismiss();
+    }
+  }
+
+  function scheduleUpdate() {
+    if (!raf && !dismissed) raf = requestAnimationFrame(tick);
+  }
+
+  function dismiss() {
+    dismissed = true;
+    intro.classList.add('dismissed');
+    window.removeEventListener('wheel', onWheel);
+    window.removeEventListener('touchstart', onTouchStart);
+    window.removeEventListener('touchmove', onTouchMove);
+    setTimeout(function () {
+      intro.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 600);
+  }
+
+  function addDelta(rawDelta) {
+    targetProgress = Math.min(1, Math.max(0, targetProgress + rawDelta));
+    scheduleUpdate();
+  }
+
+  function onWheel(e) {
+    if (dismissed) return;
+    e.preventDefault();
+    addDelta(e.deltaY * 0.0014);
+  }
+
+  function onTouchStart(e) {
+    touchY = e.touches[0].clientY;
+  }
+
+  function onTouchMove(e) {
+    if (dismissed) return;
+    e.preventDefault();
+    var dy = touchY - e.touches[0].clientY;
+    touchY = e.touches[0].clientY;
+    addDelta(dy * 0.009);
+  }
+
+  applyProgress(0);
+  document.body.style.overflow = 'hidden';
+  window.addEventListener('wheel', onWheel, { passive: false });
+  window.addEventListener('touchstart', onTouchStart, { passive: true });
+  window.addEventListener('touchmove', onTouchMove, { passive: false });
+})();
+
+/* ── Reveal on scroll ── */
+var revealEls = document.querySelectorAll('.reveal');
+var observer = new IntersectionObserver(function (entries) {
+  entries.forEach(function (e) {
+    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(function (el) { observer.observe(el); });
 </script>
 
 </body>
