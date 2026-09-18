@@ -2,18 +2,19 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/jpeg" href="Logo Green.jpg">
-<link rel="apple-touch-icon" href="Logo Green.jpg">
+<link rel="icon" type="image/jpeg" href="logo-green.jpg">
+<link rel="apple-touch-icon" href="logo-green.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KaPHi 1240 — Café de Especialidad | Nirgua, Venezuela</title>
 <meta name="description" content="Café de especialidad 100% Arábica cultivado a 1.240 msnm en Nirgua, Venezuela. Cosecha artesanal, trazabilidad completa. Variedades Clásico, Natural y Oscuro. Pedidos por WhatsApp.">
+<link rel="canonical" href="https://kaphi1240.com/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kaphi1240.com">
 <meta property="og:title" content="KaPHi 1240 — Café de Especialidad | Venezuela">
 <meta property="og:description" content="Café 100% Arábica cultivado a 1.240 msnm en la cordillera venezolana. Cosecha artesanal, proceso cuidadoso y trazabilidad directa del productor.">
-<meta property="og:image" content="https://kaphi1240-web.vercel.app/assets/img-2.jpg">
+<meta property="og:image" content="https://kaphi1240.com/assets/img-2.jpg">
 <meta property="og:locale" content="es_VE">
 <meta property="og:site_name" content="KaPHi 1240">
 
@@ -21,7 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="KaPHi 1240 — Café de Especialidad">
 <meta name="twitter:description" content="100% Arábica de altura. Cultivado a 1.240 msnm en Nirgua, Venezuela.">
-<meta name="twitter:image" content="https://kaphi1240-web.vercel.app/assets/img-2.jpg">
+<meta name="twitter:image" content="https://kaphi1240.com/assets/img-2.jpg">
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
@@ -35,7 +36,7 @@
       "description": "Café de especialidad 100% Arábica cultivado a 1.240 msnm en Nirgua, estado Yaracuy, Venezuela.",
       "url": "https://kaphi1240.com",
       "logo": "https://kaphi1240.com/favicon.png",
-      "image": "https://kaphi1240-web.vercel.app/assets/img-2.jpg",
+      "image": "https://kaphi1240.com/assets/img-2.jpg",
       "telephone": "+584142310128",
       "email": "kaphi1240coffee@gmail.com",
       "address": {
@@ -54,7 +55,7 @@
       "name": "KaPHi Clásico",
       "description": "Café lavado de tueste medio. Perfil limpio y brillante con notas cítricas, caramelo y floral. Cultivado a 1.240 msnm en Nirgua, Venezuela.",
       "brand": { "@type": "Brand", "name": "KaPHi 1240" },
-      "image": "https://kaphi1240-web.vercel.app/assets/img-2.jpg",
+      "image": "https://kaphi1240.com/assets/img-2.jpg",
       "offers": {
         "@type": "Offer",
         "availability": "https://schema.org/InStock",
@@ -66,7 +67,7 @@
       "name": "KaPHi Natural",
       "description": "Café natural de tueste medio. Secado con el fruto entero. Notas de frutos rojos, miel y chocolate.",
       "brand": { "@type": "Brand", "name": "KaPHi 1240" },
-      "image": "https://kaphi1240-web.vercel.app/assets/img-3.jpg",
+      "image": "https://kaphi1240.com/assets/img-3.jpg",
       "offers": {
         "@type": "Offer",
         "availability": "https://schema.org/InStock",
@@ -78,12 +79,49 @@
       "name": "KaPHi Oscuro",
       "description": "Café natural de tueste oscuro. Notas profundas de cacao, tabaco y cedro.",
       "brand": { "@type": "Brand", "name": "KaPHi 1240" },
-      "image": "https://kaphi1240-web.vercel.app/assets/img-4.jpg",
+      "image": "https://kaphi1240.com/assets/img-4.jpg",
       "offers": {
         "@type": "Offer",
         "availability": "https://schema.org/InStock",
         "url": "https://wa.me/584142310128?text=Hola,%20me%20interesa%20el%20KaPHi%20Oscuro"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre el Clásico, el Natural y el Oscuro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El Clásico es lavado y de tueste medio, con perfil limpio y acidez cítrica. El Natural se seca con el fruto entero y tiene notas de frutos rojos y miel. El Oscuro es natural con tueste oscuro, de cuerpo intenso y notas de cacao y tabaco."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿De dónde viene el café?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "De la finca KaPHi 1240 en Nirgua, estado Yaracuy, Venezuela, a 1.240 metros sobre el nivel del mar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo hago un pedido?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Por WhatsApp o email, coordinando directamente con la finca."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El café es 100% Arábica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, las tres variedades (Clásico, Natural y Oscuro) son 100% Arábica, cosechadas a mano y tostadas en pequeños lotes."
+          }
+        }
+      ]
     }
   ]
 }
@@ -111,6 +149,7 @@
     --brown-light: #A07850;
     --gold: #C8963C;
     --gold-light: #E8B86D;
+    --gold-dark: #6E4A1C;
     --white: #FDFAF5;
     --text: #2A1F12;
     --text-muted: #7A6350;
@@ -242,7 +281,7 @@
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--gold-dark);
     margin-bottom: 1.5rem;
   }
 
@@ -263,7 +302,7 @@
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--brown-light);
+    color: var(--brown-mid);
     margin-bottom: 1.75rem;
     display: block;
   }
@@ -397,7 +436,7 @@
     font-weight: 600;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: rgba(255,255,255,0.45);
+    color: rgba(255,255,255,0.7);
   }
 
   /* ── HISTORIA ── */
@@ -522,7 +561,7 @@
     font-weight: 700;
     letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--gold-dark);
     display: block;
     margin-bottom: 0.85rem;
   }
@@ -568,7 +607,7 @@
     font-weight: 600;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--gold-dark);
     margin-bottom: 0.5rem;
     display: block;
   }
@@ -644,7 +683,7 @@
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(122,99,80,0.5);
+    color: var(--brown-mid);
   }
 
   .cafe-meta-value {
@@ -727,8 +766,50 @@
     font-family: var(--font-heading);
     font-size: 0.8rem;
     font-weight: 700;
-    color: var(--brown-light);
+    color: var(--brown-mid);
     flex-shrink: 0;
+  }
+
+  .faq-list {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--cream-dark);
+    border-radius: 12px;
+    padding: 1.1rem 1.4rem;
+  }
+
+  .faq-item summary {
+    cursor: pointer;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text);
+    list-style: none;
+  }
+
+  .faq-item summary::-webkit-details-marker { display: none; }
+
+  .faq-item summary::after {
+    content: '+';
+    float: right;
+    color: var(--gold-dark);
+    font-weight: 700;
+  }
+
+  .faq-item[open] summary::after { content: '\2013'; }
+
+  .faq-item p {
+    margin-top: 0.75rem;
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    line-height: 1.7;
   }
 
   .resena-name {
@@ -784,7 +865,7 @@
   .contacto-desc {
     font-size: 0.85rem;
     font-weight: 400;
-    color: rgba(245,240,232,0.55);
+    color: rgba(245,240,232,0.7);
     line-height: 1.75;
     margin-bottom: 0.85rem;
   }
@@ -890,7 +971,7 @@
     font-family: var(--font-display);
     font-style: italic;
     font-size: 0.82rem;
-    color: rgba(245,240,232,0.35);
+    color: rgba(245,240,232,0.65);
   }
 
   /* ── FOOTER ── */
@@ -925,13 +1006,13 @@
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: rgba(245,240,232,0.35);
+    color: rgba(245,240,232,0.65);
   }
 
   .footer-copy {
     font-size: 0.68rem;
     font-weight: 400;
-    color: rgba(245,240,232,0.22);
+    color: rgba(245,240,232,0.65);
     letter-spacing: 0.08em;
   }
 
@@ -1144,10 +1225,10 @@
 <!-- SCROLL EXPANSION INTRO -->
 <div id="scroll-intro" role="presentation" aria-hidden="true">
   <div id="intro-bg">
-    <img src="https://kaphi1240-web.vercel.app/assets/img-1.jpg" alt="" draggable="false">
+    <img src="https://kaphi1240.com/assets/img-1.jpg" alt="" draggable="false">
   </div>
   <div id="intro-media">
-    <img src="https://kaphi1240-web.vercel.app/assets/img-1.jpg" alt="Finca KaPHi 1240 · Nirgua, Yaracuy" draggable="false">
+    <img src="https://kaphi1240.com/assets/img-1.jpg" alt="Finca KaPHi 1240 · Nirgua, Yaracuy" draggable="false">
     <div id="intro-media-overlay"></div>
   </div>
   <div id="intro-text">
@@ -1234,17 +1315,17 @@
 <!-- HISTORIA -->
 <section id="historia">
   <div class="historia-image reveal">
-    <img src="https://kaphi1240-web.vercel.app/assets/img-1.jpg" alt="Proceso de cosecha artesanal del café KaPHi en la finca de Nirgua, Yaracuy" loading="lazy">
+    <img src="https://kaphi1240.com/assets/img-1.jpg" alt="Proceso de cosecha artesanal del café KaPHi en la finca de Nirgua, Yaracuy" loading="lazy">
     <p class="historia-image-caption">Finca KaPHi · Nirgua, Estado Yaracuy</p>
   </div>
   <div class="historia-text reveal" style="transition-delay:0.15s">
     <span class="section-eyebrow">Nuestra historia</span>
     <h2 class="historia-title">El número que lo explica todo</h2>
     <p class="historia-body">
-      <strong>1.240</strong> no es solo un número — es la altitud exacta donde crece nuestro café. En Nirgua, Estado Yaracuy, la cordillera venezolana crea las condiciones perfectas: noches frescas que alargan la maduración del fruto, suelos volcánicos ricos en minerales y una densidad de grano que solo el café de altura puede alcanzar.
+      <strong>1.240</strong> es la altitud exacta donde crece nuestro café. En Nirgua, Estado Yaracuy, la cordillera venezolana crea las condiciones perfectas: noches frescas que alargan la maduración del fruto, suelos volcánicos ricos en minerales y una densidad de grano que solo el café de altura puede alcanzar.
     </p>
     <p class="historia-body">
-      Cada lote se cosecha a mano, seleccionando solo los frutos en su punto óptimo de madurez. Desde la finca hasta tu taza, conocemos cada paso del proceso — porque nosotros lo hacemos.
+      Cada lote se cosecha a mano, seleccionando solo los frutos en su punto óptimo de madurez. Desde la finca hasta tu taza pasa por nuestras manos, sin intermediarios.
     </p>
     <div class="historia-datos">
       <div class="historia-dato">
@@ -1288,7 +1369,7 @@
   <div class="cafes-grid">
     <!-- CLÁSICO -->
     <div class="cafe-card reveal">
-      <img src="https://kaphi1240-web.vercel.app/assets/img-2.jpg" alt="KaPHi Clásico — café lavado de tueste medio de Nirgua, Venezuela" class="cafe-card-img" loading="lazy" width="400" height="533">
+      <img src="https://kaphi1240.com/assets/img-2.jpg" alt="KaPHi Clásico — café lavado de tueste medio de Nirgua, Venezuela" class="cafe-card-img" loading="lazy" width="400" height="533">
       <div class="cafe-card-body">
         <span class="cafe-badge">Lavado · Tueste medio</span>
         <h3 class="cafe-name">KaPHi Clásico</h3>
@@ -1296,7 +1377,7 @@
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
           Nirgua · 1.240 msnm · Yaracuy, VE
         </p>
-        <p class="cafe-desc">Perfil limpio y brillante, ideal para descubrir la acidez natural del fruto de altura. El café que define el carácter de nuestra finca.</p>
+        <p class="cafe-desc">Perfil limpio y brillante, ideal para descubrir la acidez natural del fruto de altura.</p>
         <div class="cafe-notas">
           <span class="nota-chip">Cítrico</span>
           <span class="nota-chip">Caramelo</span>
@@ -1325,7 +1406,7 @@
 
     <!-- NATURAL -->
     <div class="cafe-card reveal" style="transition-delay:0.12s">
-      <img src="https://kaphi1240-web.vercel.app/assets/img-3.jpg" alt="KaPHi Natural — café natural de tueste medio, proceso de secado con fruto entero" class="cafe-card-img" loading="lazy" width="400" height="533">
+      <img src="https://kaphi1240.com/assets/img-3.jpg" alt="KaPHi Natural — café natural de tueste medio, proceso de secado con fruto entero" class="cafe-card-img" loading="lazy" width="400" height="533">
       <div class="cafe-card-body">
         <span class="cafe-badge">Natural · Tueste medio</span>
         <h3 class="cafe-name">KaPHi Natural</h3>
@@ -1333,7 +1414,7 @@
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
           Nirgua · 1.240 msnm · Yaracuy, VE
         </p>
-        <p class="cafe-desc">Secado con el fruto entero durante semanas bajo el sol venezolano. Una taza más dulce, frutal y de cuerpo redondo — la expresión más compleja de la finca.</p>
+        <p class="cafe-desc">Secado con el fruto entero durante semanas bajo el sol venezolano. Una taza más dulce, frutal y de cuerpo redondo.</p>
         <div class="cafe-notas">
           <span class="nota-chip">Frutos rojos</span>
           <span class="nota-chip">Miel</span>
@@ -1362,7 +1443,7 @@
 
     <!-- OSCURO -->
     <div class="cafe-card reveal" style="transition-delay:0.24s">
-      <img src="https://kaphi1240-web.vercel.app/assets/img-4.jpg" alt="KaPHi Oscuro — café natural de tueste oscuro con notas de cacao y cedro" class="cafe-card-img" loading="lazy" width="400" height="533">
+      <img src="https://kaphi1240.com/assets/img-4.jpg" alt="KaPHi Oscuro — café natural de tueste oscuro con notas de cacao y cedro" class="cafe-card-img" loading="lazy" width="400" height="533">
       <div class="cafe-card-body">
         <span class="cafe-badge">Natural · Tueste oscuro</span>
         <h3 class="cafe-name">KaPHi Oscuro</h3>
@@ -1370,7 +1451,7 @@
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
           Nirgua · 1.240 msnm · Yaracuy, VE
         </p>
-        <p class="cafe-desc">Para quienes buscan intensidad sin perder trazabilidad. El grano de altura desarrolla notas profundas que solo un tueste oscuro preciso puede revelar.</p>
+        <p class="cafe-desc">Para quienes buscan intensidad. El grano de altura desarrolla notas profundas que solo un tueste oscuro preciso puede revelar.</p>
         <div class="cafe-notas">
           <span class="nota-chip">Cacao</span>
           <span class="nota-chip">Tabaco</span>
@@ -1408,7 +1489,6 @@
 
   <div class="resenas-grid">
     <div class="resena-card reveal">
-      <span class="resena-badge">Verificado</span>
       <div class="resena-stars">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -1427,7 +1507,6 @@
     </div>
 
     <div class="resena-card reveal" style="transition-delay:0.1s">
-      <span class="resena-badge">Verificado</span>
       <div class="resena-stars">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -1446,7 +1525,6 @@
     </div>
 
     <div class="resena-card reveal" style="transition-delay:0.2s">
-      <span class="resena-badge">Verificado</span>
       <div class="resena-stars">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -1454,7 +1532,7 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
       </div>
-      <p class="resena-text">Compro el Oscuro todos los meses. Para espresso es brutal — ese cuerpo y esas notas de cacao no las encuentras en ningún café de supermercado. 100% recomendado.</p>
+      <p class="resena-text">Compro el Oscuro todos los meses. Para espresso es brutal — ese cuerpo y esas notas de cacao no las encuentras en ningún café de supermercado.</p>
       <div class="resena-author">
         <div class="resena-avatar" aria-hidden="true">LF</div>
         <div>
@@ -1466,12 +1544,38 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Preguntas frecuentes</span>
+    <h2 class="section-title">Antes de pedir</h2>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item reveal">
+      <summary>¿Cuál es la diferencia entre el Clásico, el Natural y el Oscuro?</summary>
+      <p>El Clásico es lavado y de tueste medio, con perfil limpio y acidez cítrica. El Natural se seca con el fruto entero y tiene notas de frutos rojos y miel. El Oscuro es natural con tueste oscuro, de cuerpo intenso y notas de cacao y tabaco.</p>
+    </details>
+    <details class="faq-item reveal">
+      <summary>¿De dónde viene el café?</summary>
+      <p>De nuestra finca en Nirgua, estado Yaracuy, Venezuela, a 1.240 metros sobre el nivel del mar — de ahí el nombre KaPHi 1240.</p>
+    </details>
+    <details class="faq-item reveal">
+      <summary>¿Cómo hago un pedido?</summary>
+      <p>Por WhatsApp o email — los links están en la sección de contacto. Te respondemos directamente para coordinar el pedido.</p>
+    </details>
+    <details class="faq-item reveal">
+      <summary>¿El café es 100% Arábica?</summary>
+      <p>Sí, las tres variedades son 100% Arábica, cosechadas a mano y tostadas en pequeños lotes.</p>
+    </details>
+  </div>
+</section>
+
 <!-- CONTACTO -->
 <section id="contacto">
   <div class="contacto-text reveal">
     <span class="section-eyebrow">Contacto</span>
     <h2 class="contacto-title">Hablemos de café</h2>
-    <p class="contacto-desc">Para pedidos, colaboraciones o nuevos lotes. Sin formulario, sin pasos extra — directo al grano.</p>
+    <p class="contacto-desc">Para pedidos, colaboraciones o nuevos lotes. Sin formulario, sin pasos extra — escribinos y listo.</p>
     <p class="contacto-horario">Disponible · Lunes a sábado · 8am–8pm</p>
     <div class="contacto-links">
       <a href="https://wa.me/584142310128?text=Hola,%20quiero%20hacer%20un%20pedido%20de%20café%20KaPHi" target="_blank" rel="noopener" class="contact-link wa">
@@ -1505,8 +1609,8 @@
   </div>
 
   <div class="contacto-img reveal" style="transition-delay:0.15s">
-    <img src="https://kaphi1240-web.vercel.app/assets/img-0.jpg" alt="Identidad visual de KaPHi 1240 — café de especialidad venezolano" loading="lazy">
-    <p class="contacto-img-caption">Identidad KaPHi — cercana y lista para una buena conversación</p>
+    <img src="https://kaphi1240.com/assets/img-0.jpg" alt="Identidad visual de KaPHi 1240 — café de especialidad venezolano" loading="lazy">
+    <p class="contacto-img-caption">Identidad visual de KaPHi 1240</p>
   </div>
 </section>
 
